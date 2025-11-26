@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crypto Portfolio Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="app-shell">
+            <header class="hero-card">
+                <div class="hero-copy">
+                    <p class="eyebrow">Live snapshot</p>
+                    <h1>💰 Crypto Portfolio Tracker</h1>
+                    <p class="tagline">Track holdings, compare earnings, and refresh prices all in one breathable workspace.</p>
+                </div>
+                <div class="hero-actions">
+                    <button class="add-coins">Add Coin</button>
+                    <span class="getidforcoins">Get IDs of all Coins 
+                        <a class="ExcelLink" href="https://docs.google.com/spreadsheets/d/1wTTuxXt8n9q7C4NDXqQpI3wpKu1_5bGVmP9Xz0XGSyU/edit?gid=0#gid=0" target="_blank">Here</a>
+                        <span class="ExcelTip">Tip : Use CTRL+F to locate coins faster</span>
+                    </span>
+                </div>
+            </header>
+
+            <section class="input-panel card">
+                <div class="input-panel-header">
+                    <p class="panel-title">Add or refresh a holding</p>
+                    <p class="panel-subtitle">Enter the coin ID, quantity, and buy price to begin tracking.</p>
+                </div>
+                <div class="input-coin"></div>
+            </section>
+
+            <section class="dashboard-grid">
+                <div class="card holdings-card">
+                    <div class="searchHeader">
+                        <h2 class="coinlist">My Holdings</h2>
+                    </div>
+                    <div class="holdings"></div>
+                </div>
+                <div class="card stats-card">
+                    <div class="Stats">
+                        <div class="summary">
+                            <p>Today's Stats</p>
+                            <p class="totalvalue"></p>
+                            <p class="totalprofit"></p>
+                        </div>
+                        <div class="yesterday"></div>
+                        <div class="compare"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card charts-card">
+                <div class="charts"></div>
+            </section>
+
+            <section class="card download-card">
+                <div class="download-buttons">
+                    <p>Download or archive your holdings</p>
+                    <div class="download-actions">
+                        <button class="json">JSON</button>
+                        <button class="csv">CSV</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="JS/storage.js"></script>
+        <script src="JS/api.js"></script>
+        <script src="JS/chart.js"></script>
+        <script src="JS/render.js"></script>
+        <script src="JS/download.js"></script>
+        <script src="JS/buttons.js"></script>
+        <script src="JS/search.js"></script>
+        <!-- <script src="functions.js"></script> -->
+    </body>
+</html>
