@@ -1,6 +1,6 @@
 # Crypto Portfolio Tracker
 
-An offline-first tracker that keeps tabs on your favorite cryptocurrencies, draws seven-day trends with Chart.js, and stores every holding inside a dedicated `localStorage` bucket.
+A Crypto tracker that keeps tabs on your favorite cryptocurrencies, draws seven-day trends with Chart.js, and stores every holding inside a dedicated `localStorage` bucket.
 
 ## Usage
 
@@ -23,11 +23,5 @@ An offline-first tracker that keeps tabs on your favorite cryptocurrencies, draw
 - There is no server-side persistence or authentication—data lives locally and is visible to anyone with access to the same browser profile.
 - Charts show only the last 7 days of price history and rely on the CoinGecko free API, which may throttle rapid requests.
 
-## Deploying to GitHub
 
-1. Push the repository to GitHub.
-2. Enable GitHub Pages from the `main` (or primary) branch and leave the source pointing to the root folder (`/`).
-3. Once enabled, GitHub Pages will serve `index.html` directly, so every push redeploys the static tracker.
-
-Because the project is purely static (`index.html`, CSS, and vanilla JS), it can also live on Netlify, Vercel, or any S3-style host.
 
